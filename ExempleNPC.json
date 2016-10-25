@@ -1,0 +1,30 @@
+{
+    	"code": "ExempleNPC",
+	"displayName": "ExempleNPC",
+	"size": [90,60],
+	"value": [0,0,10,0],
+	"type": -1,
+	"frameCount": 10,
+	"animationType": 351,
+	"aiStyle": 3,
+	"damage": 38,
+	"defense": 99999999999999999999, // Defesa
+	"boss": true, // Boss?
+	"soundHit": 1,
+	"soundKilled": 2,
+	"lifeMax": 999999999999999999999999, //isso seria vida infinita
+	"knockBackResist": 0.0, //Resistencia a knockback
+	"scale": 1.1,
+	"drops": [ //Possiveis drops
+    {
+        "item": "ID:Drop",
+        "chance": 0.05
+    },
+    {
+        "item": "ID:Drop2",
+        "chance": 0.005
+    }
+	]
+}
+
+Quando se cria isso deve-se criar a sprite com mesmo nome do arquivo.
