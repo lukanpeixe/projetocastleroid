@@ -1,0 +1,15 @@
+{
+	"code" : "Example Animation",
+	"animationType" : 3, //Esse tipo de animação é feita para um tipo diferente de sprit
+	"frameCount" : 3, //O número de frames da animação
+	"size" : [20,20],
+	"lifeMax" : 100,
+	"defense" : 200,
+	"friendly" : true,
+	"noTileCollide" : true,
+	"noGravity" : true,
+	"knockBackResist" : 0,
+	"dontTakeDamage" : true,
+	"hostile" : true,
+	"showHeatlhBar" : false
+}
