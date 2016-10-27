@@ -1,0 +1,14 @@
+{
+	"displayName": "Animated Example",
+	"size": [12,12],
+	"maxStack": 999,
+	"useStyle": 1,
+	"useAnimation": 15, //Aqui define o tipo de animação ex: a fornalha
+	"useTime": 10, //Aqui o tempo de vezes medidos em ms que tal animação vai ocorrer
+	"autoReuse": true,
+	"useTurn": true,
+	"createTile": "ID:AnimatedExample",
+	"consumable": true
+}
+
+Não há como eu msotrar a sprite aqui por que não tenho permissão para upar arquivos.
