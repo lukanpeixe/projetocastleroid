@@ -41,4 +41,6 @@ Obs: Sem particula de fogo também.
 
 14 - Sprites grandes para o cenário, talvez quadros que se encaixem (se puderem ser animados, é melhor ainda)
 
-
+15 - Permitir alteração de música para ambientes específico.
+//Caixa de música invisível e sem particulas já seria de bom tamanho.
+//Ser ativada por wire/presença de NPC pode tornar particulamente interessante em boss battles.
