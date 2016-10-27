@@ -1,0 +1,10 @@
+1 - Alterar os monstros precisaria decompilar o jogo para mudar as configs dele, os sprites do terraria são feitos em xnb uma compilação de jpeg irritante que eu não conheço nenhum decompilador/compilador para o xnb.
+2 - Lukan, Decompilar códigos é feito a partir de algo chamado Engenharia Reversa, usada em cracks e programas para pirataria, tenho algo de experiência mas o código vai de C# para Assembly que creio que ninguém aqui no seu canal conhece.
+3 - Alterar programação do dia e controle de monstros crio que é possivel.
+4 - Teleport Específico é possível e é facil.
+5 - Grande parte de suas especificações pode ser feitas colando do mod do sheet cheat, que lhe disponibilizarei os arquivos.
+6 - Poção de tp é possível por causa da recall potion que teleporta para outro player como: "Player p = new Player(); p.getLocation();" <- isso é java.
+7 - Criar blocos faz parte do tmodloader...
+8 - Dispositivo para detectar a morte, como tudo há eventos no Terraria, PickUp Item, Die, GetAchivement, assim por diante.
+9 - Bloco luminoso invisivel, é só criar uma tocha com sprite de um pixel.
+10 - Guadros animados fazem parte do json, sistema de animação irei mandar uma pasta com um exemplo.
