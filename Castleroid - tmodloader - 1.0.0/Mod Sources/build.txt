@@ -1,0 +1,4 @@
+author = Castleroid
+version = 0.1
+displayName = Castleroid
+includePDB = true
