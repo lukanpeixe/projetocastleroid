@@ -13,10 +13,10 @@
 5 - Mapa sem transição temporal e ocorrência de eventos.
 
 
-6 - mapa sem spawn de qualquer NPC (Monstros, animais, etc.)
+R 6 - mapa sem spawn de qualquer NPC (Monstros, animais, etc.)
 
 
-7 - Criar dispositivo wire que mate todos os monstros e elimine todos os drops.
+R 7 - Criar dispositivo wire que mate todos os monstros e elimine todos os drops.
 //Resolvido pela Distancia do Spawn
 
 8 - Criar NPC Personalizado, imóvel e imortal.
@@ -32,11 +32,11 @@
 //Substituir sprite de bloco do tipo, como teia/mato espinho/ grama e alterar suas propriedades
 
 
-12 - Cliar dispositivo wire que manda energia quando o personagem morre.
+R 12 - Cliar dispositivo wire que manda energia quando o personagem morre.
 //Resolvido adicionando censores nas áreas de respawn
 
 
-13 - Tocha de diamante invisível (sem sprite mas com iluminação)
+R 13 - Tocha de diamante invisível (sem sprite mas com iluminação)
 Obs: Sem particula de fogo também.
 
 14 - Sprites grandes para o cenário, talvez quadros que se encaixem (se puderem ser animados, é melhor ainda)
