@@ -1,0 +1,32 @@
+Itens
+Quadro Gosma
+
+Conectar o item normalmente em um sistema wireless
+o npc não possui animação.
+O npc não se move no eixo x, porém a lógica aplicada
+atravessa objetos, porem o npc interage com a gravidade.
+
+Tiles
+
+Quadro Gosma
+
+Objeto deve ser inserido em paredes
+
+
+NPCs
+
+Gosma
+
+Favor não criticar minha falta de criatividade
+
+
+
+
+Objetivos
+Realizar uma I.A mais complexa ou não, no qual teriamos total controle de suas
+ações.
+
+Caso encontrar em pesquizas anotações, códigos ou algo que ajude a entender como são
+formadas as aiStyle, ficaria extremamente feliz, bonus ficaria mais feliz se conseguir
+a função ou classe que cria os aiStyle... 
+
