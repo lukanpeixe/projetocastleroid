@@ -7,10 +7,10 @@
 3 - Alterar cor e status das armas e itens originais.
 //Clone > Sprites e Código
 
-4 - Personagem sem regeneração de vida e começando com 20/40/60 de HP.
+R 4 - Personagem sem regeneração de vida e começando com 20/40/60 de HP.
 
 
-5 - Mapa sem transição temporal e ocorrência de eventos.
+R 5 - Mapa sem transição temporal e ocorrência de eventos.
 
 
 R 6 - mapa sem spawn de qualquer NPC (Monstros, animais, etc.)
@@ -22,7 +22,7 @@ R 7 - Criar dispositivo wire que mate todos os monstros e elimine todos os drops
 8 - Criar NPC Personalizado, imóvel e imortal.
 
 
-9 - Criar item de teleporte para ponto específico do mapa.
+R 9 - Criar item de teleporte para ponto específico do mapa.
 
 
 10 - Criar poções customizadas
@@ -46,3 +46,4 @@ Obs: Sem particula de fogo também.
 //Ser ativada por wire/presença de NPC pode tornar particulamente interessante em boss battles.
 
 16 - Editar/Criar AI's de NPCs (monstros/bosses).
+//Em progresso no Hacker viewer's(DoctorVWA)
