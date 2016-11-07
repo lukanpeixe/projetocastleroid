@@ -1,3 +1,21 @@
+v1.1------------------------------
+Obs: não foram criados itens de invocação, foi utilizado o próprio heromod para spawnar o npc.
+
+NPCs
+Gosma Atirador
+Adicionado movimento ao inimigo no eixo x
+e a função de atrirar projeteis a cada 3s
+Quando o npc segue para frente (+x) ele não vira o sprite
+se alguém conseguir resolver ou até mesmo alguma dica
+atualizar o código.
+
+
+Tiro de Gosma ou gosma_shot
+Criado projetio para simular algo que a gosma dispara
+em fase de testes ainda pois ainda nao estou satisfeito com o efeito do projetio.
+
+v1.0-------------------------------
+
 Itens
 Quadro Gosma
 

@@ -10,48 +10,52 @@ namespace Castleroid.NPCs
 	{
 		int contador = 0;
 		int segundos = 0;
+		int steps = 0;
 		public override void SetDefaults()
 		{
 			npc.name = "Gosma";
 			npc.displayName = "Gosma";
-			npc.width = 18;
-			npc.height = 40;
+			npc.width = 32;
+			npc.height = 4;
 			npc.damage = 14;
 			npc.defense = 6;
 			npc.lifeMax = 200;
-			npc.soundHit = 1;
-			npc.soundKilled = 2;
+			npc.soundHit = 7;
+			npc.soundKilled = 5;
+			npc.noTileCollide = false;//colisões com pisos
 			npc.value = 60f;
-			npc.knockBackResist = 50f;
+			npc.knockBackResist = 0f;//1.0f sem resistencia - 0.0000... quanto mais zeros mais resitente
 			npc.aiStyle = -1;//Zerada a ai
 		}
 
 		public override float CanSpawn(NPCSpawnInfo spawnInfo)
 		{
-			return spawnInfo.spawnTileY < Main.rockLayer && !Main.dayTime ? 0.5f : 0f;
+			return spawnInfo.spawnTileY < Main.rockLayer && Main.dayTime ? 0.1f : 0f;
 		}
 
 		public override void AI()
 		{
+			if(steps == 0){
+				npc.velocity.X = -1;//move para traz
+			}else if(steps == 1){
+				npc.velocity.X = 1;//move para frente
+			}else{
+				npc.velocity.X = 0;
+				steps = 0;
+			}
 			npc.collideX = true;
+			npc.collideY = true;
 			contador += 1;
-
-			float vel_x = npc.position.X;
-			float vel_y = npc.position.Y;
 			if(contador > 60){//60 numero de fps do jogo 60quadros por segundo
+				steps++;
 				segundos++;
 				contador = 0;
 			}
 				if(segundos > 3){
-					//vel_x += 16;
-					vel_y -= 64;//plano cartesiano o ponto de horigem é diferente - 4 blocos altura
+					npc.velocity.Y = -7;//Força do pulo
 					segundos = 0;
 				}
-			string s = segundos.ToString();// converte variavel segundos para o formato de texto
-			npc.position = new Vector2(vel_x,vel_y);
-			Main.NewText(s, 255, 240, 20, false);// Texto com posicao x
-			
-
+				
 		}
 
 	}
