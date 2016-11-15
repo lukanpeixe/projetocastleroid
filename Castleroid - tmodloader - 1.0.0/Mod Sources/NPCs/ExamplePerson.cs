@@ -27,7 +27,7 @@ namespace Castleroid.NPCs
 			npc.damage = 10;
 			npc.defense = 15;	
 
-			npc.lifeMax = 250;
+			npc.lifeMax = 0; // Colocar zero para eliminar o NPC.
 			
 			npc.soundHit = 1;
 			npc.soundKilled = 1;
