@@ -33,8 +33,8 @@ namespace Castleroid.Items
 
 		public override bool UseItem(Player player)
 		{
-			int x = 40000; // coordenada x de teleporte
-			int y = 30; // coordenada y de teleporte
+			int x = 5000; // coordenada x de teleporte
+			int y = 1500; // coordenada y de teleporte
 
 			string posicao_x = x.ToString();// converte variavel x para o formato de texto
 			string posicao_y = y.ToString();// converte variavel y para o formato de texto

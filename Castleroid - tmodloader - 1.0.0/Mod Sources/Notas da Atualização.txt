@@ -1,50 +1,16 @@
-v1.1------------------------------
-Obs: não foram criados itens de invocação, foi utilizado o próprio heromod para spawnar o npc.
+Implementado código para virar npcs
+olhar função "AI()"
+
+Adicionado blocos falsos ou quebraveis
+
 
 NPCs
-Gosma Atirador
-Adicionado movimento ao inimigo no eixo x
-e a função de atrirar projeteis a cada 3s
-Quando o npc segue para frente (+x) ele não vira o sprite
-se alguém conseguir resolver ou até mesmo alguma dica
-atualizar o código.
 
-
-Tiro de Gosma ou gosma_shot
-Criado projetio para simular algo que a gosma dispara
-em fase de testes ainda pois ainda nao estou satisfeito com o efeito do projetio.
-
-v1.0-------------------------------
-
-Itens
-Quadro Gosma
-
-Conectar o item normalmente em um sistema wireless
-o npc não possui animação.
-O npc não se move no eixo x, porém a lógica aplicada
-atravessa objetos, porem o npc interage com a gravidade.
+gosma
+gosma atirador
 
 Tiles
+bloco_falso_tile
 
-Quadro Gosma
-
-Objeto deve ser inserido em paredes
-
-
-NPCs
-
-Gosma
-
-Favor não criticar minha falta de criatividade
-
-
-
-
-Objetivos
-Realizar uma I.A mais complexa ou não, no qual teriamos total controle de suas
-ações.
-
-Caso encontrar em pesquizas anotações, códigos ou algo que ajude a entender como são
-formadas as aiStyle, ficaria extremamente feliz, bonus ficaria mais feliz se conseguir
-a função ou classe que cria os aiStyle... 
-
+Item
+bloco_falso

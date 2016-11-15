@@ -12,7 +12,7 @@ namespace Castleroid.Items
 			item.melee = true;
 			item.width = 40;
 			item.height = 40;
-			item.toolTip = "Espada branca.";
+			item.toolTip = "Espada branca";
 			item.useTime = 20;
 			item.useAnimation = 20;
 			item.useStyle = 1;
@@ -26,7 +26,7 @@ namespace Castleroid.Items
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.DirtBlock, 10);
+			recipe.AddIngredient(ItemID.DirtBlock, 1);
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

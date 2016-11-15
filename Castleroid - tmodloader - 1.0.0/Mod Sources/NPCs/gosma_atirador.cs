@@ -19,7 +19,7 @@ namespace Castleroid.NPCs
 			npc.name = "Gosma Atirador";
 			npc.displayName = "Gosma Atirador";
 			npc.width = 32;
-			npc.height = 4;
+			npc.height = 32;
 			npc.damage = 20;
 			npc.defense = 6;
 			npc.lifeMax = 100;
@@ -37,6 +37,15 @@ namespace Castleroid.NPCs
 		}
 
 		public override void AI(){
+		//Virar sprites----------------------------------------------------------------------
+		if (npc.velocity.X < 0)
+    	{
+        	npc.spriteDirection = -1;//para esquerda ou -x
+    	}else{
+    		npc.spriteDirection = 1;//para direita ou +x
+    	}
+    	//---------------------------------------------------------------------------------------
+
 			int damage = 5;//Adiciona o dano ao projetio
             Player P = Main.player[npc.target];// Priorisa o target do personagem em testes ainda
                
@@ -106,5 +115,8 @@ namespace Castleroid.NPCs
 	O npc salta após 3 s porem não se aplica a gravidade corretamente, poderia fazer manual, mas deixaria de ser terraria
 	e a gravidade não ficaraia como a de alguns npcs. Enfim estoru trabalhando nisso se alguem puder me ajudar, tipo um código 
 	de aiStyle seria ótimo, mas vou trabalhar mais.
+
+
+	Jungle Vines
 
 */

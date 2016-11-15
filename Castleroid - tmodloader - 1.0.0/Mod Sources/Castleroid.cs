@@ -37,7 +37,7 @@ namespace Castleroid
 							Main.npc[num].homeTileX = Main.spawnTileX + 5;
 							Main.npc[num].homeTileY = Main.spawnTileY;
 							Main.npc[num].direction = 1;
-							Main.npc[num].homeless = true;
+							Main.npc[num].homeless = true;													
 												
 						}  					
 						
@@ -62,6 +62,7 @@ namespace Castleroid
 			            spawnRate = 0; // impede spawn de animais e monstros
 			            maxSpawns = 0; // define número máximo de spawn de animais e monstros			            
 			        }
+
 			}		
 				         
 			public override void ResetEffects()
@@ -79,11 +80,23 @@ namespace Castleroid
 			
 
 						Player.tileRangeX = 50; // distancia que pode adicionar blocos
-						Player.tileRangeY = 40; // altura que pode adicionar blocos
+						Player.tileRangeY = 50; // altura que pode adicionar blocos
 						player.tileSpeed = 5f; // velocidade de posicionamento de tiles
 
-						player.lifeRegen = 0;	// regeneração de life
-			}
+						player.lifeRegenCount = 0; // regeneração de life
+
+						Main.time = 32400.1; // permanece sempre dia
+
+
+						//Main.time = 0;  // fica noite
+						//Outra opção
+						//Main.dayTime = true; // fica dia
+
+						// player.statLifeMax = 500; // define a quantidade máxima de vida
+                        // player.statLife = 50; // define a quantidade atual de vida
+                        // player.statDefense = 10; define a defesa do jogador.
+                        
+            }
 	    } 
     }
 }
