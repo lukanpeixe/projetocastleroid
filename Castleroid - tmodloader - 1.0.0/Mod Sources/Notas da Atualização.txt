@@ -1,16 +1,12 @@
-Implementado código para virar npcs
-olhar função "AI()"
+Rosaria - aumenta sua defesa quando entra no formato de rosa.
 
-Adicionado blocos falsos ou quebraveis
+
+Obs:falta alguns testes com os frames
+mas agora é mais questão de aplicar o que queremos que o npc faça
+
+Não foram realizados testes para mudar de frames automaticamente
+será um novo tópico no qual discutiremos com certeza.
 
 
 NPCs
-
-gosma
-gosma atirador
-
-Tiles
-bloco_falso_tile
-
-Item
-bloco_falso
+Rosaria
