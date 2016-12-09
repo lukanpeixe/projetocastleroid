@@ -1,7 +1,13 @@
-using Terraria.ModLoader;
-using Terraria;
 using System;
+using System.Collections.Generic;
 using System.IO;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using Terraria;
+using Terraria.DataStructures;
+using Terraria.ID;
+using Terraria.ModLoader;
+using Terraria.ObjectData;
 using System.Text;
 
 namespace Castleroid
@@ -9,10 +15,12 @@ namespace Castleroid
  
     public class Castleroid : Mod
     {
-        internal bool instantRespawn = false;        
+        internal bool instantRespawn = false;  
+            
 
         public Castleroid()
         {
+        	
             Properties = new ModProperties()
             {
                 Autoload = true, 
@@ -21,13 +29,12 @@ namespace Castleroid
         }      
 	    
 	        public class Geral : ModPlayer
-	        {	        
-	       
+	        {	 
 	        int num;
-
 	        int onLoad = 0;
 
-	        public void addExamplePerson() // adiciona no mundo o NPC que foi criado
+	        public void addExamplePerson() 
+	     //adiciona no mundo o NPC que foi criado
 	        {	     
 
 	                    if (onLoad == 0){
@@ -64,9 +71,21 @@ namespace Castleroid
 			        }
 
 			}		
-				         
+
 			public override void ResetEffects()
 			{
+			//Ativa a regeneração de vida
+			int id_buff = BuffID.Regeneration;
+			if(player.buffTime[id_buff] > 0)
+			{
+				//string teste = player.lifeRegen.ToString();
+				Main.NewText("Ativado", 255, 240, 20, false);
+				player.lifeRegen = 0;
+			}else{
+				Main.NewText("Desativado", 255, 240, 20, false);
+				//player.lifeRegen = 0;
+				player.lifeRegenCount = 0;
+			}			
 				       
 				        
                         // quando o personagem der o primeiro pulo, o NPC é adicionado no mapa
@@ -83,19 +102,19 @@ namespace Castleroid
 						Player.tileRangeY = 50; // altura que pode adicionar blocos
 						player.tileSpeed = 5f; // velocidade de posicionamento de tiles
 
-						player.lifeRegenCount = 0; // regeneração de life
+						//player.lifeRegenCount = 0; // regeneração de life
 
-						Main.time = 32400.1; // permanece sempre dia
+						//Main.time = 32400.1; // permanece sempre dia
+                        Main.time = Main.time-1;// mantem o tempo em looping, travado em um horário estipulado por outros itens
 
+                //Main.time = 0;  // fica noite
+                //Outra opção
+                //Main.dayTime = true; // fica dia
 
-						//Main.time = 0;  // fica noite
-						//Outra opção
-						//Main.dayTime = true; // fica dia
+                // player.statLifeMax = 500; // define a quantidade máxima de vida
+                // player.statLife = 50; // define a quantidade atual de vida
+                // player.statDefense = 10; define a defesa do jogador.
 
-						// player.statLifeMax = 500; // define a quantidade máxima de vida
-                        // player.statLife = 50; // define a quantidade atual de vida
-                        // player.statDefense = 10; define a defesa do jogador.
-                        
             }
 	    } 
     }
