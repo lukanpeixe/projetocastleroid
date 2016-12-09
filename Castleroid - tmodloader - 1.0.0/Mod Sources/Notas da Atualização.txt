@@ -1,12 +1,12 @@
-Rosaria - aumenta sua defesa quando entra no formato de rosa.
+Implementado regen_sword.cs
+Para uma melhor compreenção comentei o máximo do código
 
+Ao equipar a espada não acontece nada porem quando o personagem
+causa dano a um npc, o personagem tem chance de ganhar regeneração de vida
 
-Obs:falta alguns testes com os frames
-mas agora é mais questão de aplicar o que queremos que o npc faça
+Nota: ligar no arquivo Castleroid.cs a regeneração de vida, ou simplesmente comente a linha 
 
-Não foram realizados testes para mudar de frames automaticamente
-será um novo tópico no qual discutiremos com certeza.
+Item
+Espada da vida - regen_sword.cs
 
-
-NPCs
-Rosaria
+Mais uma vez peço que nao critiquem minha arte XD
