@@ -8,6 +8,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
+using Castleroid;
 
 namespace Castleroid.Items
 {
@@ -56,33 +57,16 @@ namespace Castleroid.Items
 			return aux_chance;//Valor retornado para utilizar na função OnHitNPC
 			
 		}
-		//Funcao criada para ativar e desativar o regen
-		public void Regen(){
-			//Vou opmitizar o código estava com um pouco de preguiça XD
-
-			//Caso o jogador possua o status do buff ele ativa ou nao o regen
-			if(player.HasBuff(BuffID.Regeneration) == -1){
-				regen = false;
-			}else{
-				regen = true;
-			}
-			if(regen){
-				player.lifeRegen += 1;//Quantidade que ira regenerar
-				//player.lifeRegenCount = 1;//Não achei necessario usar mas tambem influencia no heal
-			}else{
-				player.lifeRegen = 0;
-				player.lifeRegenCount = 0;
-			}
-		}
 
 		public override void OnHitNPC(Player player, NPC target, int damage, float knockback, bool crit)
 		{
+
 			int t = Chance();
 			int v = player.HasBuff(BuffID.Regeneration);
-			string teste = v.ToString();
+			//string teste = v.ToString();
+			//Teste auxiliar para chance de adicionar o buff, a escala usada na função 0-10 entao se o valor maior que 7 condição aceita
 			if(t > 7){
-					regen = true;
-					player.AddBuff(BuffID.Regeneration, 600);
+					player.AddBuff(BuffID.Regeneration, 180);
 			}
 
 			//Main.NewText(teste, 255, 240, 20, false);

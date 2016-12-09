@@ -4,7 +4,11 @@ Para uma melhor compreenção comentei o máximo do código
 Ao equipar a espada não acontece nada porem quando o personagem
 causa dano a um npc, o personagem tem chance de ganhar regeneração de vida
 
-Nota: ligar no arquivo Castleroid.cs a regeneração de vida, ou simplesmente comente a linha 
+Nota: Adicionado códigos no arquivo Castleroid.cs, precisei alterar a função ResetEffects()
+ele ativa e desativa a regeneração de vida.
+//Main.NewText("Ativado", 255, 240, 20, false); 
+essa linha de código é apenas utilizada para testes, achei importante deixar ali no código
+é uma maneira util de saber o que esta fazendo. Basta comentar ou excluir
 
 Item
 Espada da vida - regen_sword.cs
