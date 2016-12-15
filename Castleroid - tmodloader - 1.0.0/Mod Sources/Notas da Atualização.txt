@@ -1,16 +1,13 @@
-Implementado regen_sword.cs
+Implementado boss_1.cs
 Para uma melhor compreenção comentei o máximo do código
 
-Ao equipar a espada não acontece nada porem quando o personagem
-causa dano a um npc, o personagem tem chance de ganhar regeneração de vida
+Movimentação do boss
+É bem básica mas considerei um grande avanço
+O boss se movimenta de forma frequente para uma direção
+caso colida com algo solido ele muda a direção(vai para o lado contrario)
 
-Nota: Adicionado códigos no arquivo Castleroid.cs, precisei alterar a função ResetEffects()
-ele ativa e desativa a regeneração de vida.
-//Main.NewText("Ativado", 255, 240, 20, false); 
-essa linha de código é apenas utilizada para testes, achei importante deixar ali no código
-é uma maneira util de saber o que esta fazendo. Basta comentar ou excluir
 
-Item
-Espada da vida - regen_sword.cs
+NPCs
+Boss - boss_1.cs
 
 Mais uma vez peço que nao critiquem minha arte XD
