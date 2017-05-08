@@ -1,0 +1,70 @@
+Adicione a pasta "Castleroid" em (...)\Documentos\my games\Terraria\ModLoader\Mod Sources\
+
+Com o tmodloader, vá em Mod Sorce, vá até Castleroid e clique em Build+Reload
+
+
+Versão 0.107 por @Lukan
+- Ajuste da Transparent Shine: brilho mais fraco para minimizar distorção de cores nos personagens
+- Ajuste da Transparent Shine: stack de 99 para 999. Velocidade de adição agora é moderada (30 frames)
+- Adicionada a arma Hanabira
+- Adicionado novos objetos gráficos para o jardim
+Obs.: As armas serão adicionadas sem descrição, pois as mesmas precisarão ser traduzidas previamente.
+Adaptações para 1.3.4(5) Tmodloader
+- Desligado "public override void Kill(double damage, int hitDirection, bool pvp, string deathText)" no Castleroid.cs linha 46
+- Desligado "public override void SaveCustomData(BinaryWriter writer)" no ExamplePlayer.cs linha 60
+- Desligado "public override void LoadCustomData(BinaryReader reader)" no ExamplePlayer.cs linha 66
+- Desligado "public override bool PreHurt(bool pvp, bool quiet, ref int damage, ref int hitDirection, ref bool crit,
+ref bool customDamage, ref bool playSound, ref bool genGore, ref string deathText)" no ExamplePlayer.cs linha 185
+!!! Versão instável, antes da troca de versão do Terraria, um objeto visual do Jardim estava travando na hora de compilar, também foi adicionado item de spawn do @Kemado mas não pude testar sua funcionalidade.
+
+Versão 0.106 por @Kemado / @Gurigraphics
+- Criação de personagem personalizada, limitando HP e definindo itens inicias
+- Adicionada a NPC com AI experimental Rosaria
+
+Versão 0.105 por @LukanPeixe / @Kemado / @SamuelDeboni
+- NPC's agora virão para a direção que se deslocam
+- Modificação da IA da Gosma* e Gomas Atiradora
+- Adicionado dois NPC's Guardian Hornet com movimentação constante no Eixo X / Eixo Y**
+- Adicionado NPC Malicius Flower com projétil fixo para a esquerda (comentários no código)***
+- Adiciona comando main.timeSet-1 mp Castleroid.cs para travar o tempo de forma dinâmica
+- Adicionado os itens Sun Summon e Moon Summon para alteração do dia e da noite via Wire****
+
+* Gosma esta bugada com sprite piscante
+** Quando colide, persiste no tempo da trajetória. Necessário arranjar um meio de faze-las perceber a colisão e voar para a direção contrária na hora.
+*** Necessário que dispare outro projétil simultaneamente na direção contrária.
+
+Versão 0.104 por @LukanPeixe / @Kemado / @SamuelDeboni
+- Adicionado NPC's PD, Gosma e Gosma Atiradora
+- Desenvolvida IA de Pulo / Movimento Continuo Delimitado / Disparo para NPC's 
+- Adicionado Quadros de Invocação de NPC's
+- Adicionado NPC's para teste de IA
+- Adicionado NPC's insetos para o Jardim 4/13
+- Adicionado Poison (item base para início)
+- Adicionado SugarPetal e CloudPetal
+- Adicionado WiringSundial que altera mapa para dia
+- Aumentada a potência da Transparent Shine
+
+Versão 0.103 por @Gurigraphics
+- Main.time = 32400.1; // permanece sempre dia
+- Main.time = 0;  // fica noite
+- player.statLifeMax = 500; // define a quantidade máxima de vida
+- player.statLife = 50; // define a quantidade atual de vida
+- player.statDefense = 10; define a defesa do jogador.
+- npc.lifeMax = 0; // Colocar zero para eliminar NPC gerados.
+
+Versão 0.102 por @Kemado
+- Adicionado item teleporte
+
+Versão 0.101 por @LukanPeixe
+- Corrigido desligamento de regeneração
+- Adicionado pastas "tiles" e "items/pleceable"
+- Adicionado a Transparent Shine, tocha invisível
+
+Versão 0.100 por @Gurigraphics
+- Adiciona NPC no mundo
+- Adiciona novo item
+- Impede respawn de monstros
+- Desativa regeneração
+- tileRangeX = 50
+- tileRangeY = 40;
+- player.tileSpeed = 5f;

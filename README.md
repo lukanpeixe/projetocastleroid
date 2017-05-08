@@ -1,6 +1,9 @@
 # projetocastleroid
 Trabalhando em códigos para o mod/mapa de aventura para Terraria produzido pelo Idealizador e seguidores do canal Press key to play.
 
+# Segurança
+Os arquivos do github ligados às informações do mod estão codificados com senha, apenas nossos programadores tem a senha; Sem spoiler curioso ;)
+
 # Collaborators
 - Lukan Peixe
 - Kemado
