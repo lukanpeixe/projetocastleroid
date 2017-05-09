@@ -1,3 +1,4 @@
+kk eae men
 Adicione a pasta "Castleroid" em (...)\Documentos\my games\Terraria\ModLoader\Mod Sources\
 
 Com o tmodloader, vá em Mod Sorce, vá até Castleroid e clique em Build+Reload
